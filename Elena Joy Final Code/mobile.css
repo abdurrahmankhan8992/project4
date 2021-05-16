@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+ul{
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {
+    width: 100%;
+  
+
+}
+
+
+@media screen and (max-width : 768px) {
+    #navbar-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .logo {
+        margin: auto;
+    }
+
+    .nav-list li {
+        padding:  0 2rem;
+        text-align: center;
+    }
+
+    /* main-content flex coloumn */
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    .coloumn-1 h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+    }
+
+    .coloumn-1 p {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+
+    .coloumn-2 img {
+        min-height: 50vh;
+        object-fit: cover;
+    }
+    /* MAIN ALINA ABOUTT */
+
+    .main-content-about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-alina {
+        background: url("./img/about-image.png") no-repeat center center/cover;
+        width: 100%;
+        height: 50vh;
+    }
+    .main-content-about .about-alina-info {
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 0 0.3rem;
+        
+    }
+
+    
+.about-alina-info .life {
+    margin: 10px;
+}
+
+.imgs {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.imgs img {
+    display: block;
+    margin: auto;
+}
+
+.imgs h4,
+.imgs p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+h5{
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer {
+    min-height: 10vh;
+}
+
+
+}
